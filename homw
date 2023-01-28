@@ -1,0 +1,5 @@
+module.exports = {
+  name:"wow",
+  aliases:["hi"],
+  code:`hi`
+}
