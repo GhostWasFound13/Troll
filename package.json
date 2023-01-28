@@ -1,9 +1,9 @@
 {
   "name": "Tommy-bot",
   "version": "1.0.0",
-  "main": "doggo.js",
+  "main": "index.js",
   "scripts": {
-    "test": "node doggo.js"
+    "test": "node index.js"
   },
   "keywords": [],
   "author": "",
