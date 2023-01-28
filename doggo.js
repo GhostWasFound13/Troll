@@ -1173,17 +1173,7 @@ $takeRole[$timeoutdata[userID];$getServerVar[mute;$timeoutdata[serverID]]]`
  
 })
 //nod end
-bot.readyCommand({
-    channel: '',
-    code: `$log[
-  ╭─━━━━━━━━━━━━━━━━━━─╮
-  Ready Command Code
-  Client: $userTag[$clientID]
-  Ping: $ping ms
-  Bot Creator: $username[$botOwnerID]#$discriminator[$botOwnerID]
-  Commands loaded: $commandsCount
-  connect discord bot token (stable)
-  
-  ╰─━━━━━━━━━━━━━━━━━━─╯
-  ]`
-})
+const files = fs.readdirSync('./events').filter(file => file.endsWith('.js'))
+files.forEach( x => {
+require(`./events/${x}`)(bot)
+});
