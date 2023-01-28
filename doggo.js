@@ -516,8 +516,8 @@ code: d.util.setCode(data)
 
 
 const fetch = require('node-fetch');
-bot.comman{(
-  name: "bozo"
+bot.comman({
+  name: "bozo",
   code: `
 
 Haha nice! You guessed it.
