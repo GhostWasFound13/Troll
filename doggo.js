@@ -68,20 +68,20 @@ $let[time;$dateStamp]
 $suppressErrors`
 })
 
-const voice = new Aoijs.Voice(bot, {
-  cache: {
-    cacheType: "Memory", //Disk | None | Memory
-    directory: "./music/", //Only for "Disk"
-    enabled: true
-  },
-  soundcloud: {
-    clientId: "iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX",
-    likeTrackLimit: 200
-  },
-  playerOptions: {
- trackInfoInterval: 150
-},
-}); 
+//const voice = new Aoijs.Voice(bot, {
+  //cache: {
+ //   cacheType: "Memory", //Disk | None | Memory
+//    directory: "./music/", //Only for "Disk"
+ //w   enabled: true
+ // },
+//  soundcloud: {
+ //   clientId: "iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX",
+//    likeTrackLimit: 200
+//  },
+//  playerOptions: {
+// trackInfoInterval: 150
+//},
+//}); 
 
 //const app = panel.app;
 //app.get("/somenewpagename_which_is_not_already_used", (req,res) =>{
@@ -153,7 +153,7 @@ Usage:
 });
 
 
-voice.onTrackStart()
+//voice.onTrackStart()
 
 voice.trackStartCommand({
  channel: "$channelID",
